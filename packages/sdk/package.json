@@ -1,7 +1,7 @@
 {
   "name": "@miladsoft/mini-apps-sdk",
   "type": "module",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Custom Telegram Mini Apps SDK.",
   "author": "Vladislav Deryabkin",
   "license": "MIT",
