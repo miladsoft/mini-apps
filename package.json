@@ -12,7 +12,9 @@
     "build": "rimraf packages/*/dist --glob && pnpm -r --filter=./packages/* run build",
     "release": "bumpp -r package.json packages/*/package.json playground/package.json",
     "preinstall": "npx only-allow pnpm",
-    "prepare": "simple-git-hooks"
+    "prepare": "simple-git-hooks",
+    "version": "node -p \"require('./package.json').version\"",
+    "changelog": "conventional-changelog -i CHANGELOG.md -s -r 0 && git add CHANGELOG.md"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^2.21.1",
