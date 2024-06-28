@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "target": "ES2018",
+    "lib": ["ESNext", "DOM"],
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "paths": {
+      "@miladsoft/mini-apps-core": ["./packages/core/src/index.ts"],
+      "@miladsoft/mini-apps-core/types": ["./packages/core/src/types/index.ts"],
+      "@miladsoft/mini-apps-utils": ["./packages/utils/src/index.ts"],
+      "@miladsoft/mini-apps-sdk": ["./packages/sdk/src/index.ts"]
+    },
+    "checkJs": true,
+    "strict": true,
+    "strictNullChecks": true,
+    "noEmit": true,
+    "skipDefaultLibCheck": true,
+    "skipLibCheck": true
+  },
+  "exclude": [
+    "**/dist/**",
+    "**/node_modules/**"
+  ]
+}

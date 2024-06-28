@@ -1,0 +1,45 @@
+{
+  "name": "@miladsoft/mini-apps-core",
+  "type": "module",
+  "version": "0.7.0",
+  "description": "Minimally useful custom Telegram Mini Apps implementation.",
+  "author": "Vladislav Deryabkin",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/miladsoft/mini-apps.git",
+    "directory": "packages/core"
+  },
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/index.d.mts",
+        "default": "./dist/index.mjs"
+      },
+      "require": {
+        "types": "./dist/index.d.cts",
+        "default": "./dist/index.cjs"
+      }
+    },
+    "./types": {
+      "import": {
+        "types": "./dist/types/index.d.mts"
+      },
+      "require": {
+        "types": "./dist/types/index.d.cts"
+      }
+    }
+  },
+  "main": "dist/index.cjs",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "unbuild"
+  },
+  "dependencies": {
+    "@miladsoft/mini-apps-utils": "workspace:*"
+  }
+}

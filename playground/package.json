@@ -1,0 +1,18 @@
+{
+  "name": "@miladsoft/mini-apps-playground",
+  "type": "module",
+  "version": "0.7.0",
+  "private": true,
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -p ./tsconfig.json && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@miladsoft/mini-apps-sdk": "workspace:*"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.5",
+    "vite": "^5.3.1"
+  }
+}
